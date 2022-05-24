@@ -21,7 +21,7 @@ namespace VacationManagement.Models
         [DataType(DataType.Date)]
         [Display(Name = "End Date")]
         public DateTime EndDate { get; set; }
-        public string? Comment { get; set; }
+        public string Comment { get; set; }
         public bool Approved { get; set; }
         public DateTime DateApproved { get; set; }
         public List<VacationPlan> VacationPlanList { get; set; } = new List<VacationPlan>();
