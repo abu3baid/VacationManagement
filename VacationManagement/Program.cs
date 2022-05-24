@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<VacationDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("VacationConn");
+    options.UseSqlServer(builder.Configuration.GetConnectionString("VacationConn")));
 
 var app = builder.Build();
 
